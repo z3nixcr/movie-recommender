@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recommended Movies</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="page">
+        {% include 'header.html' %}
+        <main class="main-content container">
+            <div class="movies">
+                {% for movie in similar %}
+                <div class="movie-card">
+                    <h3>{{ movie.title }}</h3>
+                    <img src="{{ movie.poster }}" alt="movie info">
+                </div>
+                {% endfor %}
+            </div>
+        </main>
+    </div>
+</body>
+</html>

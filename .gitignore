@@ -1,0 +1,5 @@
+.idea/
+venv/
+backend/construct_data.py
+backend/tmdb_5000_credits.csv
+backend/tmdb_5000_movies.csv

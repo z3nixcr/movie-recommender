@@ -1,0 +1,25 @@
+<header class="header">
+    <div class="overlay">
+        <h1>Movie Recommender Website</h1>
+
+        <form action="/movie_title" class="data-list" method="post">
+            <div class="search-box">
+                <div class="row">
+                    <label for="title"></label>
+                    <input type="text" name="title" autocomplete="off" id="title" placeholder="Type or select the movie" list="movie-list">
+                </div>
+            </div>
+            <input type="submit" value="Send">
+
+            <datalist id="movie-list">
+            {% for movie in movies_list %}
+                <option>{{ movie }}</option>
+            {% endfor %}}
+            </datalist>
+        </form>
+    </div>
+
+    <video src="../static/bg.mp4" autoplay loop>
+        Oops! your browser does not support video.
+    </video>
+</header>
